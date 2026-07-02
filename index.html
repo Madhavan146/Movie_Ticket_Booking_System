@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie_Ticket_Bokking_System</title>
+</head>
+<body>
+    <div  class="login">
+        <center>
+   <form class="forms">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+       <label>Name:</label><input class="inp" type=""  id="name" placeholder="Enter the name"> <br>
+       <label>Password:</label><input type="password" class="inp" id="password" placeholder="Enter the Password"> <br> <br>
+       <button type="button" onclick="onto()" class="butt" id="butt" >Login</button>
+   </form>
+</center>
+    </div>
+</body>
+<style>
+
+body{
+   background-image: url(https://t3.ftcdn.net/jpg/03/55/60/70/360_F_355607062_zYMS8jaz4SfoykpWz5oViRVKL32IabTP.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+   height: 100vh; 
+
+}
+
+
+.forms{
+    border: 1px solid;
+    height: 200px;
+    width: 300px;
+    margin-top: 250px;
+    border-radius: 10px;
+}
+
+.inp{
+    margin-top: 30px;
+    width: 170px;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 9px;
+}
+.butt{
+height: 30px;
+width: 68px;
+border: 1px solid;
+border-radius: 10px;
+color: white;
+background-color: blue;
+
+}
+
+
+
+
+
+@media screen and (max-width:768px){
+.forms{
+    margin-top: 150px;
+}
+}
+</style>
+<script>
+  function onto(){
+
+  let  name=document.getElementById('name').value;
+     password=document.getElementById('password').value;
+
+  if(password== "" || name== "" )
+  {
+       alert('Enter the Required Field');
+  }
+else{
+    window.location.href="index1.html";
+}
+}
+</script>
+</html>
